@@ -11,6 +11,13 @@ class Solution{
             int a = in.nextInt();
             int b = in.nextInt();
             int n = in.nextInt();
+        
+            int currentValue = a;
+            for(int j=0;j<n;j++) {
+                currentValue += b*(1<<j);
+                System.out.print(currentValue+" ");
+            }
+            System.out.println();
         }
         in.close();
     }
